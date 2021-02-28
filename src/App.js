@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import Row from "./Row";
@@ -7,6 +7,16 @@ import requsets from "./requests";
 import Banner from "./Banner";
 import Nav from "./Nav";
 function App() {
+  useEffect(()=>{
+    let NODE_ENV = "Production"
+    if ((NODE_ENV || "").toLowerCase() === "production") {
+  console.log = function () {return 0};
+  console.info = function () {return 0};
+  console.warn = function () {return 0};
+  console.error = function () {return 0};
+  console.debug = function () {return 0};
+}
+  })
   return (
     <div className="app">
       {/* Nav */}

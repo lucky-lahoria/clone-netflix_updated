@@ -42,7 +42,7 @@ function Row({ title, fetchUrl, isLargeRow }) {
   const base_url = "https://image.tmdb.org/t/p/original/";
 
   const handleClick = (movie) => {
-    console.log(movie);
+    // console.log(movie);
     if (trailerUrl) {
       setTrailerUrl("");
     } else {
