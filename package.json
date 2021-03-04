@@ -1,6 +1,6 @@
 {
-  "name": "netflix-clone",
-  "homepage": "netflix-clone",
+  "name": "clone-netflix",
+  "homepage": "clone-netflix",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
