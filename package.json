@@ -1,6 +1,6 @@
 {
   "name": "netflix-clone",
-  "homepage": "netflix-clone",
+  "homepage": "http://lucky-lahoria.github.io/clone-netflix",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -23,9 +23,9 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
+    "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
